@@ -1,0 +1,9 @@
+[submodule "modules/CT-agent-tg-bot-module"]
+	path = modules/CT-agent-tg-bot-module
+	url = git@github.com:bekambirhanu/CT-agent-tg-bot-module.git
+[submodule "modules/CT-agent-nlp-parser-module"]
+	path = modules/CT-agent-nlp-parser-module
+	url = git@github.com:bekambirhanu/CT-agent-nlp-parser-module.git
+[submodule "modules/CT-agent-broker-ex-module"]
+	path = modules/CT-agent-broker-ex-module
+	url = git@github.com:bekambirhanu/CT-agent-broker-ex-module.git
