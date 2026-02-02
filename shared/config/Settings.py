@@ -16,10 +16,10 @@ class _Settings(BaseSettings):
     
     MODEL_API_KEY: str = os.getenv("MODEL_API_KEY") | None
     MODEL_NAME: str = os.getenv("MODEL_NAME") | None
-    MODEL_BASE_URL: str =os.getenv("MODEL_BASE_URL") | None
+    MODEL_BASE_URL: str = os.getenv("MODEL_BASE_URL") | None
     
     # Telegram Config
-    TELEGRAM_BOT_TOKEN: str
+    TELEGRAM_BOT_TOKEN: str = os.getenv("TELEGRAM_BOT_TOKEN") | None
 
     # Broker Config (Exness/MT5)
     MT5_LOGIN: Optional[int] = None
