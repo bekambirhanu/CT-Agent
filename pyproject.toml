@@ -11,8 +11,8 @@ dependencies = [
 
 [tool.uv.workspace]
 members = [
-     "modules/CT-agent-broker-ex-module",
-     "modules/CT-agent-nlp-parser-module",
-     "modules/CT-agent-tg-bot-module",
+     "modules/ct_agent_broker_ex_module",
+     "modules/ct_agent_nlp_parser_module",
+     "modules/ct_agent_tg_bot_module",
      "shared",
 ]
