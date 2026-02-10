@@ -1,12 +1,14 @@
 from abc import ABC, abstractmethod
+from modules.ct_agent_nlp_parser_module.nlp_parser.schema import TradeOrder
 
 
-class BrokerAdapter(ABC):
+class BaseBroker(ABC):
     
     @abstractmethod
-    def place_order(self, order: dict) -> dict:
+    async def execute_order(self, order: TradeOrder) -> dict:
+        """Send order to broker and return response"""
         pass
-    
+
     @abstractmethod
-    def get_status(self, order_id: str) -> dict:
+    def get_account_info(self) -> dict:
         pass

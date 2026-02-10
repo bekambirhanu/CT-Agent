@@ -1,6 +1,6 @@
-def main():
-    print("Hello from ct-agent!")
+from telegram_bot.bot import run_bot
 
 
 if __name__ == "__main__":
-    main()
+    print('CT-Agent app running')
+    run_bot()

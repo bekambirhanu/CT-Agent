@@ -23,17 +23,20 @@ class _Settings(BaseSettings):
     # Telegram Config
     TELEGRAM_BOT_TOKEN: str = os.getenv("TELEGRAM_BOT_TOKEN") or ""
 
-    # Broker Config (Exness/MT5)
-    MT5_LOGIN: Optional[int] = None
-    MT5_PASSWORD: Optional[str] = None
-    MT5_SERVER: Optional[str] = None
-
+    # Windows VM Bridge (VirtualBox)
+    MT5_BRIDGE_URL: str = os.getenv("MT5_BRIDGE_URL") or "http://localhost:8000"  # VirtualBox Host-Only IP
+    MT5_PASSWORD: str
+    MT5_LOGIN: int
+    MT5_SERVER: str
+    
     # App Config
     DEBUG: bool = False
 
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
-
+    def __str__(self):
+        return super().__str__()
+    
 # Global instance
 Settings = _Settings()
 
