@@ -2,27 +2,16 @@
 name = "ct-agent"
 version = "0.1.0"
 description = "Copy trading agent for telegram"
+authors = [{name = "beck", email = "becnolight@gmail.com"}]
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "pydantic-settings>=2.12.0",
     "python-dotenv>=1.2.1",
-    "shared",
-    "ct_agent_tg_bot_module",
-    "ct_agent_nlp_parser_module",
-    "ct_agent_broker_ex_module",
 ]
 
 [tool.uv.workspace]
 members = [
-     "modules/ct_agent_broker_ex_module",
-     "modules/ct_agent_nlp_parser_module",
-     "modules/ct_agent_tg_bot_module",
+     "modules/*",
      "shared",
 ]
-
-[tool.uv.sources]
-shared = { workspace = true }
-ct_agent_tg_bot_module = { workspace = true }
-ct_agent_nlp_parser_module = { workspace = true }
-ct_agent_broker_ex_module = { workspace = true }

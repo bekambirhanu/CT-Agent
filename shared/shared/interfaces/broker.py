@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from modules.ct_agent_nlp_parser_module.nlp_parser.schema import TradeOrder
+from nlp_parser.schema import TradeOrder
 
 
 class BaseBroker(ABC):
